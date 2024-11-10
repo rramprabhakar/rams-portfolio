@@ -1,0 +1,72 @@
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  color: #030303;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 2rem; /* Adjusted for responsiveness */
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+}
+
+a {
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+a:hover {
+  border-color: #030303;
+}
+
+body {
+  padding-top: 120px; /* Ensure this is adequate based on your header height */
+}
+
+section {
+  padding-top: 60px;
+  scroll-margin-top: 50px; /* Prevents sections from hiding behind the header */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    margin: 10px 0;
+  }
+}

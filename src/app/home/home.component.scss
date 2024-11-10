@@ -1,0 +1,179 @@
+#home {
+  margin-top: 80px; /* Ensures it is not covered by the fixed header */
+}
+
+#skills, #experience, #contact, #resume {
+  margin-top: 80px; /* Adjust spacing between sections */
+}
+
+section {
+  padding-top: 60px;
+  scroll-margin-top: 50px;
+}
+
+/* Profile Picture Border */
+.profile-pic-border {
+  display: inline-block;
+  padding: 3vw; /* Relative padding for responsiveness */
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #00008b, #0000cd);
+}
+
+.profile-pic-border img {
+  border-radius: 50%;
+  width: 30vw; /* Makes the image size relative to viewport */
+  height: 30vw;
+  max-width: 600px; /* Ensures it doesn’t grow too large */
+  max-height: 600px;
+}
+
+/* Social Media Icons */
+.icon-circle {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 70px; /* Fixed size for circular icon */
+  height: 70px; /* Fixed size for circular icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #00008b, #0000cd);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.icon-circle img {
+  width: 40px; /* Icon size, fixed to maintain shape */
+  height: 40px; /* Icon size, fixed to maintain shape */
+}
+
+.icon-circle:hover {
+  background-image: linear-gradient(white, white), linear-gradient(to right, #1e90ff, #00bfff);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+}
+
+/* Icon Text */
+.icon-text {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon-circle:hover .icon-text {
+  display: block;
+  font-size: 8px;
+  color: #040f1b;
+}
+
+/* Adjust section layout on smaller screens */
+@media (max-width: 768px) {
+  #home {
+    margin-top: 120px;
+  }
+
+  .profile-pic-border {
+    padding: 10px;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .icon-circle {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .icon-circle img {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .icon-text {
+    font-size: 10px;
+  }
+}
+/* Base styles for mobile-first approach */
+/* Ensure the header is responsive */
+.wrap {
+  padding: 15px; /* Adjust padding for small screens */
+  display: flex;
+  flex-direction: column; /* Stack items for mobile */
+  align-items: center; /* Center the logo and nav */
+  justify-content: center;
+}
+
+.logo {
+  font-size: 24px; /* Adjust font size for mobile */
+  text-align: center; /* Center the logo */
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* Stack navigation links vertically on mobile */
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav a {
+  font-size: 16px; /* Adjust font size */
+  margin: 5px 0; /* Add spacing between links */
+}
+
+/* Media query for screens larger than 600px (tablets and larger devices) */
+@media (min-width: 600px) {
+  .wrap {
+    flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: space-between;
+  }
+
+  nav {
+    flex-direction: row; /* Align nav items horizontally on larger screens */
+  }
+
+  .logo {
+    font-size: 30px; /* Adjust font size for larger screens */
+  }
+
+  nav a {
+    margin: 0 10px; /* Horizontal spacing for nav links */
+  }
+}
+
+/* For social media icons in the home component */
+.icon-circle {
+  width: 60px; /* Adjust for smaller screens */
+  height: 60px; /* Adjust for smaller screens */
+  margin: 0 8px; /* Adjust spacing between icons */
+}
+
+.icon-circle img {
+  width: 24px; /* Smaller icons for mobile */
+  height: 24px;
+}
+
+/* For larger screens (desktop and up) */
+@media (min-width: 1024px) {
+  .icon-circle {
+    width: 70px; /* Larger icons on desktops */
+    height: 70px;
+  }
+
+  .icon-circle img {
+    width: 30px; /* Larger icons */
+    height: 30px;
+  }
+}
+
