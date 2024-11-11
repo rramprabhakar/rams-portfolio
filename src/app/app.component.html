@@ -1,4 +1,3 @@
-<!-- app.component.html -->
 <app-header
   (scrollToHome)="onScrollToHome()"
   (scrollToSkills)="onScrollToSkills()"
@@ -7,4 +6,25 @@
   (scrollToResume)="onScrollToResume()">
 </app-header>
 
-<app-home></app-home>
+<!-- Sections with references for scrolling -->
+<section id="home" #homeSection>
+  <app-home></app-home>
+</section>
+
+<section id="skills" #skillsSection>
+  <app-skills></app-skills>
+</section>
+
+<section id="experience" #experienceSection>
+  <app-experience></app-experience>
+</section>
+
+<section id="contact" #contactSection>
+  <!-- Contact section with embedded contact component -->
+  <app-contact></app-contact>
+</section>
+
+<section id="resume" #resumeSection>
+  <!-- Resume section with embedded resume component -->
+  <!-- <app-resume></app-resume> -->
+</section>
