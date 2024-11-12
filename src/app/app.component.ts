@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ResumePopupComponent } from './resume-popup/resume-popup.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,9 @@ import { ExperienceComponent } from './experience/experience.component';
     HomeComponent,
     ContactComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ResumeComponent,
+    ResumePopupComponent
   ]
 })
 export class AppComponent {

@@ -1,56 +1,74 @@
 .skills-section {
-    padding: 4rem 2rem;
-    background-color: white;
-  }
-  
-  .skills-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #333;
-  }
-  
-  .section-description {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    color: #666;
-  }
-  
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  .skill-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-    &:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-  }
-  
-  .skill-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .skill-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
+  margin-top: 80px; /* Ensures it is not covered by the fixed header */
+  padding-top: 65px;
+}
+
+.skills-intro {
+  margin-bottom: 30px;
+}
+
+
+.skills-section .section-title {
+  color: #000000; /* Ensures the section title is black */
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+/* Ensure the some of my skills subtitle is black */
+.skills-intro .subsection-title {
+  color: rgb(99, 91, 91); /* Ensures the subtitle is black */
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Ensure the paragraph text in the skills introduction is in black */
+.skills-intro .section-description {
+  color: #000000; /* Makes the intro text black */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Highlights list styling */
+.highlights-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #000000; /* Ensures text inside list items is black */
+}
+
+.highlights-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Updated Skills Grid Styling: 3 rows */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+  gap: 20px;
+}
+
+/* Each Skill Item */
+.skill-item {
+  text-align: center;
+}
+
+.skill-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000; /* Ensures each skill name is black */
+  margin-top: 10px;
+}
+
+.skill-name strong {
+  font-weight: 700; /* Bold for specific skills like Docker, Kubernetes, etc. */
+}

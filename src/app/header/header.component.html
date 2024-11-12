@@ -6,6 +6,8 @@
         <a (click)="onSkillsClick()">My Skills</a>
         <a (click)="onExperienceClick()">Experience</a>
         <a (click)="onContactClick()">Contact Me</a>
-        <a (click)="onResumeClick()">View Resume</a>
+        <!-- <a (click)="onResumeClick()">View Resume</a> -->
+        <button (click)="openResumePopup()">View Resume</button>
     </nav>
+    <app-resume-popup *ngIf="showResumePopup" (closePopup)="closeResumePopup()"></app-resume-popup>
 </div>
