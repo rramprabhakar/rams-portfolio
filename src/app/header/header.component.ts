@@ -18,6 +18,9 @@ export class HeaderComponent {
   @Output() scrollToContact = new EventEmitter<void>();
   @Output() scrollToResume = new EventEmitter<void>();
 
+  showResumePopup = false;
+  mobileMenuOpen = false;
+
   constructor() {}
 
   onHomeClick() {
@@ -40,7 +43,14 @@ export class HeaderComponent {
     this.scrollToResume.emit();
   }
 
-  showResumePopup = false;
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
+  }
+  
 
   openResumePopup() {
     this.showResumePopup = true;

@@ -1,13 +1,14 @@
 <!-- header.component.html -->
 <div class="wrap">
     <div class="logo">Ram Rajamahanthi.</div>
-    <nav>
-        <a (click)="onHomeClick()">Portfolio</a>
-        <a (click)="onSkillsClick()">My Skills</a>
-        <a (click)="onExperienceClick()">Experience</a>
-        <a (click)="onContactClick()">Contact Me</a>
-        <!-- <a (click)="onResumeClick()">View Resume</a> -->
-        <button (click)="openResumePopup()">View Resume</button>
+    <button class="hamburger" (click)="toggleMobileMenu()">&#9776;</button>
+    <nav [class.open]="mobileMenuOpen">
+      <a (click)="onHomeClick(); closeMobileMenu()">Portfolio</a>
+      <a (click)="onSkillsClick(); closeMobileMenu()">My Skills</a>
+      <a (click)="onExperienceClick(); closeMobileMenu()">Experience</a>
+      <a (click)="onContactClick(); closeMobileMenu()">Contact Me</a>
+      <button (click)="openResumePopup(); closeMobileMenu()">View Resume</button>
     </nav>
     <app-resume-popup *ngIf="showResumePopup" (closePopup)="closeResumePopup()"></app-resume-popup>
-</div>
+  </div>
+  
