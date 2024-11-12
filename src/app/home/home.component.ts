@@ -14,7 +14,7 @@ export class HomeComponent {
   @ViewChild('contactSection') contactSection!: ElementRef;
   @ViewChild('resumeSection') resumeSection!: ElementRef;
 
-  private headerHeight = 60; // Adjust this based on your header height
+  private headerHeight = 60; // this is to adjust based on  header height
 
   constructor() {}
 
@@ -39,7 +39,7 @@ export class HomeComponent {
     this.scrollToSection(this.resumeSection);
   }
 
-  // Scroll to the specific section while considering header height
+  // to Scroll to the specific section while considering header height
   private scrollToSection(section: ElementRef) {
     window.scrollTo({
       top: section.nativeElement.offsetTop - this.headerHeight,

@@ -23,20 +23,20 @@ import { ResumePopupComponent } from './resume-popup/resume-popup.component';
   ]
 })
 export class AppComponent {
-  // Simple scroll logic for each section
+  // scrolling logic for each section, if the section exits the controlwill go inside of the if block
   scrollToSection(sectionId: string): void {
     const section = document.getElementById(sectionId);
     if (section) {
       const headerHeight = document.querySelector('header')?.clientHeight || 0;
-      let offset = 20; // Default offset for most sections
+      let offset = 20; // This is default offset value for all sections. 
 
-      // Increase the offset specifically for the 'home' section to fix the header overlap
+      // This is for home page when user clicks on other menu in header section so that there will not be any overlap.
       if (sectionId === 'home') {
         offset = 50; // Adjust the offset for the home section (increase to ensure it doesn't go under the header)
       }
 
       window.scrollTo({
-        top: section.offsetTop - headerHeight - offset, // Adjusted scroll position with custom offset
+        top: section.offsetTop - headerHeight - offset, // based on header height adjusting...
         behavior: 'smooth'
       });
     }

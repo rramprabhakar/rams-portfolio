@@ -1,4 +1,3 @@
-// header.component.ts
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Import CommonModule
 import { ResumePopupComponent } from '../resume-popup/resume-popup.component'; // Import ResumePopupComponent
@@ -58,8 +57,6 @@ export class HeaderComponent {
 
   closeResumePopup() {
     this.showResumePopup = false;
-    // Navigate to home or portfolio after closing
-    // Replace 'home' with your desired route path
     window.location.href = '';
   }
   
