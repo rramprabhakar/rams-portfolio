@@ -7,10 +7,14 @@
       margin-bottom: 20px;
       color: #333;
     }
+
+    .smiley::after {
+      content: "😊";
+    }
   
     .section-description {
       font-size: 1.2em;
-      color: #666;
+      color: #2d2b2b;
       margin-bottom: 30px;
     }
   
