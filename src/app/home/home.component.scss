@@ -2,6 +2,10 @@
   margin-top: 80px; /* Ensures it is not covered by the fixed header */
 }
 
+.smiley::after {
+  content: "😊";
+}
+
 #skills, #experience, #contact, #resume {
   margin-top: 80px; /* Adjust spacing between sections */
 }

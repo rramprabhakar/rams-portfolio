@@ -1,4 +1,3 @@
-// header.component.ts
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Import CommonModule
 import { ResumePopupComponent } from '../resume-popup/resume-popup.component'; // Import ResumePopupComponent
@@ -17,6 +16,9 @@ export class HeaderComponent {
   @Output() scrollToExperience = new EventEmitter<void>();
   @Output() scrollToContact = new EventEmitter<void>();
   @Output() scrollToResume = new EventEmitter<void>();
+
+  showResumePopup = false;
+  mobileMenuOpen = false;
 
   constructor() {}
 
@@ -40,7 +42,14 @@ export class HeaderComponent {
     this.scrollToResume.emit();
   }
 
-  showResumePopup = false;
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
+  }
+  
 
   openResumePopup() {
     this.showResumePopup = true;
@@ -48,8 +57,6 @@ export class HeaderComponent {
 
   closeResumePopup() {
     this.showResumePopup = false;
-    // Navigate to home or portfolio after closing
-    // Replace 'home' with your desired route path
     window.location.href = '';
   }
   
