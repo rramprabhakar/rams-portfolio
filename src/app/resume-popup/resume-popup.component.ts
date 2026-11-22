@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-resume-popup',
@@ -9,6 +9,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class ResumePopupComponent {
   @Output() closePopup = new EventEmitter<void>();
 
+  @HostListener('document:keydown.escape')
   onClose() {
     this.closePopup.emit();
   }

@@ -26,7 +26,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              { 
+              {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
@@ -101,8 +101,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "dir": "dist/rams-portfolio/browser",
+            "branch": "gh-pages",
+            "cname": "ramrajamahanthi.com",
+            "baseHref": "/",
+            "message": "Deploy portfolio to ramrajamahanthi.com"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -2,106 +2,11 @@
   <div class="container">
     <h2 class="section-title" style="color: #3a54bd;">My Professional Experience</h2>
     <p class="section-description">
-      Here’s a snapshot of my professional experience across various roles and companies.
+      18+ years across insurance, banking and the public sector, from Java back ends to cloud-native platforms to production agentic AI.
     </p>
 
     <div class="timeline">
-      <!-- Experience 1 - Nationwide Insurance -->
-      <div class="timeline-item row">
-        <div class="col-md-4 logo-col">
-          <div class="logo-container">
-            <img src="assets/images/Nationwide_logo.jpg" alt="Nationwide Insurance Logo" class="company-logo" />
-          </div>
-        </div>
-        <div class="col-md-8 content-col">
-          <div class="timeline-content">
-            <h3 class="company-name">Nationwide Insurance, Phoenix, Arizona</h3>
-            <span class="timeline-date">March 2020 - Till date</span>
-            <p class="project-description">
-              Technical lead developer for ESS – Excess surplus and specialty Portal applications where curently I'm playing a critical role to Build and maintain New/existing applications on daily basis and springboot api, Java 11 and angular latest versions. Migration of apps from on-prem to Cloud Native Platform in Kuberenetes.
-            </p>
-            <ul class="technologies-used">
-              <li>Java11</li>
-              <li>Angular</li>
-              <li>springboot</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>HarnessNextGen</li>
-              <li>Rancher</li>
-              <li>helm</li>
-              <li>Oracle</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Timeline Connector -->
-        <div class="timeline-connector">
-          <div class="timeline-dot"></div>
-        </div>
-      </div>
 
-      <!-- Experience 2 - Department of Health and Services -->
-      <div class="timeline-item row">
-        <div class="col-md-4 logo-col">
-          <div class="logo-container">
-            <img src="assets/images/dhs.jpg" alt="dhs" class="company-logo" />
-          </div>
-        </div>
-        <div class="col-md-8 content-col">
-          <div class="timeline-content">
-            <h3 class="company-name">Department of Health and Services, Madison, Wisconsin</h3>
-            <span class="timeline-date">March 2017 - March 2020</span>
-            <p class="project-description">
-              CARES (Client Assistance for Reemployment and Economic Support) is automated application used to determine eligibility for several
-Wisconsin’s major welfare reform and public assistance programs including Food stamp, Medical Assistance (including Badger Care
-Plus, Childless Adults, Family Care and Senior Care) and Child Care, Wisconsin Works (W–2).
-            </p>
-            <p class="project-description">
-              Have worked as a Sr.Java developer here and responsible for the design and development of key modules in a large-scale application using Java and Spring. Worked on enhancing application security, improving data processing efficiency, and managing deployment processes.
-            </p>
-            <ul class="technologies-used">
-              <li>Java11</li>
-              <li>Angular</li>
-              <li>springboot</li>
-              <li>Docker</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Timeline Connector -->
-        <div class="timeline-connector">
-          <div class="timeline-dot"></div>
-        </div>
-      </div>
-
-      <!-- Experience 3 - American Family Insurance -->
-      <div class="timeline-item row">
-        <div class="col-md-4 logo-col">
-          <div class="logo-container">
-            <img src="assets/images/amfam.png" alt="amfam" class="company-logo" />
-          </div>
-        </div>
-        <div class="col-md-8 content-col">
-          <div class="timeline-content">
-            <h3 class="company-name">American Family Insurance, Madison, Wisconsin</h3>
-            <span class="timeline-date">May 2016 - March 2017</span>
-            <p class="project-description">
-              Worked as Fullstack developer in Billing center is Primary user interface to customer billing data. Web based system which allows viewing and updating of billing data.
-This is built on angular, and database is db2.
-            </p>
-            <ul class="technologies-used">
-              <li>Java</li>
-              <li>Spring</li>
-              <li>REST APIs</li>
-              <li>angular</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Timeline Connector -->
-        <div class="timeline-connector">
-          <div class="timeline-dot"></div>
-        </div>
-      </div>
-
-      <!-- Experience 4 - Nationwide Insurance -->
       <div class="timeline-item row">
         <div class="col-md-4 logo-col">
           <div class="logo-container">
@@ -110,38 +15,187 @@ This is built on angular, and database is db2.
         </div>
         <div class="col-md-8 content-col">
           <div class="timeline-content">
-            <h3 class="company-name">Nationwide Insurance, Hyderabad, India</h3>
-            <span class="timeline-date">Dec 2011 - April 2016</span>
-            <p class="project-description">
-              Worked as a Java developer.
-            </p>
+            <h3 class="company-name">Nationwide Mutual Insurance, Phoenix, Arizona</h3>
+            <span class="timeline-date">Nov 2024 - Present</span>
+            <p class="role-title"><strong>AI Lead Developer &amp; SRE Lead, Excess &amp; Surplus / Specialty (ESS)</strong></p>
+            <ul class="highlights">
+              <li>Own the target architecture for an agentic underwriting platform: event-driven FastAPI microservices on AWS, LangGraph for stateful workflows, MongoDB Atlas for transactional and vector data.</li>
+              <li>Designed the workflow as explicit agent state machines (ingestion → validation → risk scoring → quoting → approval routing), cutting manual policy processing time by 60%.</li>
+              <li>Built the RAG layer over underwriting guidelines and policy documents using Atlas Vector Search and Titan embeddings on Amazon Bedrock.</li>
+              <li>Designed the evaluation framework that gates every release: underwriter-labeled golden datasets, a Python test harness, deterministic checks, calibrated LLM-as-a-judge and human review, enforced as a CI gate.</li>
+              <li>Instrumented the platform with OpenTelemetry tracing in HoneyHive (prompt, output, tokens, latency, cost per step) with online evaluators and alerting.</li>
+              <li>Sole SRE point of contact for 120+ ESS applications: onboarding to New Relic and Splunk, coverage reporting to leadership, and latency/performance SME on P0 incidents (20+ major incidents resolved).</li>
+            </ul>
             <ul class="technologies-used">
-              <li>Java</li>
-              <li>Spring</li>
-              <li>oracle</li>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>LangGraph</li>
+              <li>LangChain</li>
+              <li>Amazon Bedrock</li>
+              <li>MongoDB Atlas Vector Search</li>
+              <li>AWS</li>
+              <li>HoneyHive</li>
+              <li>OpenTelemetry</li>
+              <li>New Relic</li>
+              <li>Splunk</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
             </ul>
           </div>
+        </div>
+        <div class="timeline-connector">
+          <div class="timeline-dot"></div>
         </div>
       </div>
 
       <div class="timeline-item row">
         <div class="col-md-4 logo-col">
           <div class="logo-container">
-            <img src="assets/images/scotia.png" alt="scotia" class="company-logo" />
+            <img src="assets/images/Nationwide_logo.jpg" alt="Nationwide" class="company-logo" />
           </div>
         </div>
         <div class="col-md-8 content-col">
           <div class="timeline-content">
-            <h3 class="company-name">Bank of Nova Scotia, Hyderabad, India</h3>
-            <span class="timeline-date">Dec 2007 - Dec 2011</span>
-            <p class="project-description">
-              Software Developer
-            </p>
+            <h3 class="company-name">Nationwide Mutual Insurance, Phoenix, Arizona</h3>
+            <span class="timeline-date">Mar 2020 - Nov 2024</span>
+            <p class="role-title"><strong>Technical Lead / Application Architect, ESS Application Portfolio</strong></p>
+            <ul class="highlights">
+              <li>Owned build, run and modernization for 40+ applications across Excess &amp; Surplus, Management Liability, Specialty, Surety and Program lines.</li>
+              <li>Defined the reference Kubernetes deployment architecture (Helm, HPA, ingress, Concourse, Harness Next Gen, Rancher, Harbor) and migrated 20 applications off on-prem.</li>
+              <li>Architected the shared ESS identity and access layer (SSO, role-based authorization, Spring Security, Angular route guards) used by several thousand users daily.</li>
+              <li>Introduced API-first design with OpenAPI contracts exposed through Apigee; led Java 8 → 17 and Angular 10 → 17 upgrades.</li>
+              <li>Led a 15-person onshore/offshore team while staying hands-on; kept ~90% unit-test coverage and was an early adopter of GitHub Copilot.</li>
+            </ul>
+            <ul class="technologies-used">
+              <li>Java 17</li>
+              <li>Spring Boot</li>
+              <li>Angular 17</li>
+              <li>Kubernetes</li>
+              <li>Docker</li>
+              <li>Helm</li>
+              <li>Harness Next Gen</li>
+              <li>Rancher</li>
+              <li>Apigee</li>
+              <li>Oracle</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-connector">
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+
+      <div class="timeline-item row">
+        <div class="col-md-4 logo-col">
+          <div class="logo-container">
+            <img src="assets/images/dhs.jpg" alt="Wisconsin DHS" class="company-logo" />
+          </div>
+        </div>
+        <div class="col-md-8 content-col">
+          <div class="timeline-content">
+            <h3 class="company-name">Wisconsin Department of Health Services, Madison, Wisconsin</h3>
+            <span class="timeline-date">Mar 2017 - Mar 2020</span>
+            <p class="role-title"><strong>Senior Java Developer, CARES Eligibility Platform</strong></p>
+            <ul class="highlights">
+              <li>CARES determines eligibility and benefits for Wisconsin’s major public assistance programs (FoodShare, Medicaid/BadgerCare Plus, Child Care, W-2) and powers the myAccess mobile app.</li>
+              <li>Built microservices from scratch for myAccess, letting residents apply for benefits and view benefit history.</li>
+              <li>Built event-driven integrations with Apache Kafka and Camel; secured services with Spring Security and OAuth2.</li>
+            </ul>
+            <ul class="technologies-used">
+              <li>Java 8</li>
+              <li>Spring Boot</li>
+              <li>Kafka</li>
+              <li>Camel</li>
+              <li>Angular</li>
+              <li>Oracle</li>
+              <li>DB2</li>
+              <li>IBM MQ</li>
+              <li>Docker</li>
+              <li>Jenkins</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-connector">
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+
+      <div class="timeline-item row">
+        <div class="col-md-4 logo-col">
+          <div class="logo-container">
+            <img src="assets/images/amfam.png" alt="American Family Insurance" class="company-logo" />
+          </div>
+        </div>
+        <div class="col-md-8 content-col">
+          <div class="timeline-content">
+            <h3 class="company-name">American Family Insurance, Madison, Wisconsin</h3>
+            <span class="timeline-date">Apr 2016 - Mar 2017</span>
+            <p class="role-title"><strong>Technology Analyst, Billing &amp; Payments</strong></p>
+            <ul class="highlights">
+              <li>Designed and built Spring Boot REST microservices for Billing Center and Payment Manager, connecting multiple billing systems and payment channels (EFT, card, IVR, Pay Now).</li>
+            </ul>
+            <ul class="technologies-used">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>REST APIs</li>
+              <li>Angular</li>
+              <li>DB2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-connector">
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+
+      <div class="timeline-item row">
+        <div class="col-md-4 logo-col">
+          <div class="logo-container">
+            <img src="assets/images/Nationwide_logo.jpg" alt="Nationwide" class="company-logo" />
+          </div>
+        </div>
+        <div class="col-md-8 content-col">
+          <div class="timeline-content">
+            <h3 class="company-name">Nationwide Insurance</h3>
+            <span class="timeline-date">Dec 2011 - Apr 2016</span>
+            <p class="role-title"><strong>Technology Analyst, Agent Gateway, Span of Control &amp; Agency Transfers</strong></p>
+            <ul class="highlights">
+              <li>Developed the Agent Gateway suite, giving agents one interface for customer, policy, quote, billing and claims data.</li>
+              <li>Built Span of Control (agent hierarchy feeding sales reporting and commissions) and the Agency Transfers app; provided on-call production support and release management.</li>
+            </ul>
             <ul class="technologies-used">
               <li>Java</li>
               <li>Spring</li>
-              <li>oracle</li>
-              <li>javascript</li>
+              <li>Oracle</li>
+              <li>Informatica</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-connector">
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+
+      <div class="timeline-item row">
+        <div class="col-md-4 logo-col">
+          <div class="logo-container">
+            <img src="assets/images/scotia.png" alt="Scotiabank" class="company-logo" />
+          </div>
+        </div>
+        <div class="col-md-8 content-col">
+          <div class="timeline-content">
+            <h3 class="company-name">Bank of Nova Scotia (Scotiabank)</h3>
+            <span class="timeline-date">Jun 2007 - Dec 2011</span>
+            <p class="role-title"><strong>Software Developer, Mobile Banking, Alerts &amp; Commercial Cards</strong></p>
+            <ul class="highlights">
+              <li>Built back-end services for Scotiabank’s then-new mobile banking channel (informational, transactional and payment services); wrote designs and led code reviews.</li>
+            </ul>
+            <ul class="technologies-used">
+              <li>Java</li>
+              <li>Spring</li>
+              <li>Oracle</li>
+              <li>JavaScript</li>
             </ul>
           </div>
         </div>

@@ -1,12 +1,19 @@
-<div class="popup-overlay">
-  <div class="popup-content">
-    <button class="close-btn" (click)="onClose()">✖</button>
+<div class="popup-overlay" (click)="onClose()">
+  <div class="popup-content" (click)="$event.stopPropagation()" role="dialog" aria-modal="true" aria-label="Resume">
+    <div class="popup-bar">
+      <span class="popup-title">My Resume</span>
+      <div class="popup-actions">
+        <button class="close-btn" (click)="onClose()" aria-label="Close resume" title="Close (Esc)">
+          <span class="x">✕</span> Close
+        </button>
+      </div>
+    </div>
     <iframe
       src="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=1"
       width="100%"
-      height="100%"
       frameborder="0"
       allow="fullscreen"
     ></iframe>
   </div>
+  <p class="hint">Press Esc or click outside to close</p>
 </div>

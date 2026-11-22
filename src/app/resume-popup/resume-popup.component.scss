@@ -1,34 +1,65 @@
 .popup-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .popup-content {
-  width: 80vw; // Adjusted for larger width
-  height: 90vh; // Adjusted for larger height
+  width: 80vw;
+  height: 88vh;
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  cursor: default;
 }
 
+.popup-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: linear-gradient(to right, #00008b, #3a54bd);
+  color: #fff;
+}
+
+.popup-title { font-weight: 600; font-size: 1.05rem; }
+
+.popup-actions { display: flex; gap: 10px; align-items: center; }
+
 .close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
+  background: #fff;
+  color: #00008b;
   border: none;
-  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: 700;
+  font-size: 1rem;
   cursor: pointer;
-  color: #333;
-  z-index: 10;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  animation: pulse 1.8s ease-out 3;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  .x { margin-right: 4px; }
+  &:hover, &:focus-visible { background: #ff4d4f; color: #fff; transform: scale(1.05); outline: none; }
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8); }
+  100% { box-shadow: 0 0 0 12px rgba(255, 255, 255, 0); }
+}
+
+iframe { flex: 1; border: 0; }
+
+.hint { color: #ddd; font-size: 0.85rem; margin: 8px 0 0; }
+
+@media (max-width: 768px) {
+  .popup-content { width: 95vw; height: 85vh; }
 }
